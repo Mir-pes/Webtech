@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetched Data</title>
+</head>
+<body>
+    <h1>Fetched Data</h1>
+    <ul id="data-list"></ul>
+    <script>
+        // Fetch data and populate the list
+        fetch('/get-all-data')
+            .then(response => response.json())
+            .then(data => {
+                const dataList = document.getElementById('data-list');
+                data.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `ID: ${item._id}, Name: ${item.name}, Email: ${item.email}`;
+                    dataList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>

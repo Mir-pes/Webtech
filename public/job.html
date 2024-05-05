@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitement form</title>
+    <link rel = "stylesheet" href="finalform.css" type = "text/css">
+    <div class = "main">
+        <div class = "register">
+            <h2>Register Here</h2>
+            <form id = "register" method="post" action="/submit-form">
+                First Name:<input name = "First Name" type = "name" placeholder="First name">
+                <br><br>
+                Last Name:<input name = "Last Name" type = "name" placeholder="Last name">
+                <br><br>
+                Phone No:<input name = "Phone No" type = "phone no" placeholder="Enter 10 digits">
+                <br><br>
+                Gender:     <input type = "radio" name = "genm" value = "m"/>Male
+                            <input type = "radio" name = "genm" value = "f"/>Female
+                <br><br>
+
+                Languages Preferred:<select name = "Planguage">
+                    <option selected value = "English">English</option>
+                    <option selected value = "Hindi">Hindi</option>
+                    <option selected value = "Kannada">Kannada</option>
+                    <option selected value = "Tamil">Tamil</option>
+                    <option selected value = "Marathi">Marathi</option>
+                    <option selected value = "Bengali">Bengali</option>
+                    <option selected value = "Gujarati">Gujarati</option>
+                    <option selected value = "Rajasthani">Rajasthani</option>
+                    </select>
+                    <br><br>
+
+                    <label>Official E-mail</label>: <input name = "Email" type = "email" name = "mail" placeholder="enter your email">
+                    <br><br>
+
+                    <label>Previous workplace if any</label>: <input name = "workplace" type = "name" name = "mail" placeholder="enter your Company's name">
+                    <br><br>
+
+                     Designation if any:<select name = "Idesignation">
+                        <option selected value = "Founder/Chairman">Founder/Chairman</option>
+                        <option selected value = "CEO">CEO</option>
+                        <option selected value = "CMO">CMO</option>
+                        <option selected value = "COO">COO</option>
+                        <option selected value = "HR">HR</option>
+                        <option selected value = "CTO">CTO</option>
+                        <option selected value = "Manager">Manager</option>
+                        <option selected value = "Others">Others</option>
+                        </select>
+
+                        Qualification:<select name = "Qualification">
+                            <option selected value = "B.TECH">B.TECH</option>
+                            <option selected value = "BBA">BBA</option>
+                            <option selected value = "MBA">MBA</option>
+                            <option selected value = "B.COM">B.COM</option>
+                            <option selected value = "CA">CA</option>
+                            <option selected value = "BCA">BCA</option>
+                        </select>
+
+                        Experience(If Any):<select name = "Experience">
+                            <option selected value = "0-5">0-5</option>
+                            <option selected value = "5-10">5-10</option>
+                            <option selected value = "10-15">10-15</option>
+                            <option selected value = "15-20">15-20</option>
+                            <option selected value = "Fresher">Fresher(just starting out)</option>
+                            
+                        </select>
+
+
+                    <button class = "btn-field">Submit</button>
+                    
+
+
+
+
+
+            </form>
+        </div>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitement form</title>
+    <link rel = "stylesheet" href="finalform.css" type = "text/css">
+    <div class = "main">
+        <div class = "register">
+            <h2>Register Here</h2>
+            <form action = "/submit-form" id = "register" method="POST">
+                First Name:<input type = "name" name = "Firstname"placeholder="First name" required>
+                <br><br>
+                Last Name:<input type = "name" name = "Lastname" placeholder="Last name" required>
+                <br><br>
+                Recruiter Phone No:<input type = "phone no" name = "Phoneno"placeholder="Enter 10 digits" required>
+                <br><br>
+                Gender:     <input type = "radio" name = "Gender" value = "m" required/>Male
+                            <input type = "radio" name = "Gender" value = "f" required/>Female
+                <br><br>
+
+                Languages Preferred:<select name = "Planguage">
+                    <option selected value = "English">English</option>
+                    <option selected value = "Hindi">Hindi</option>
+                    <option selected value = "Kannada">Kannada</option>
+                    <option selected value = "Tamil">Tamil</option>
+                    <option selected valye = "Marathi">Marathi</option>
+                    <option selected value = "Bengali">Bengali</option>
+                    <option selected value = "Gujarati">Gujarati</option>
+                    <option selected value = "Rajasthani">Rajasthani</option>
+                    </select>
+                    <br><br>
+
+                    <label>Official E-mail</label>: <input type = "email" name = "mail" placeholder="enter your email" required>
+                    <br><br>
+
+                    <label>Company's Name</label>: <input type = "name" name = "company" placeholder="enter your Company's name" required>
+                    <br><br>
+
+                     Designation:<select name = "Idesignation">
+                        <option selected value = "Founder/Chairman">Founder/Chairman</option>
+                        <option selected value = "CEO">CEO</option>
+                        <option selected value = "CMO">CMO</option>
+                        <option selected value = "COO">COO</option>
+                        <option selected valye = "HR">HR</option>
+                        <option selected value = "CTO">CTO</option>
+                        <option selected value = "Manager">Manager</option>
+                        <option selected value = "Others">Others</option>
+                        </select>
+
+                        <button class = "btn-field">Submit</button>
+
+
+            </form>
+        </div>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
